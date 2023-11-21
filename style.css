@@ -54,9 +54,46 @@ a {
     align-items: center;
 }
 
+
 .main-menu ul li {
     margin-left: 10px;
+    position: relative;
+    display: inline-block;
 }
+
+.main-menu ul li:hover {
+    text-decoration: underline 2px white;
+}
+
+.main-menu ul li .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 25px 85px 25px 10px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.main-menu ul li:hover .sub-menu {
+    margin-top: 1em;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.sub-menu li a {
+    color: hsl(207, 11%, 16%);
+}
+
+.sub-menu li a:hover {
+    font-weight: bold;
+}
+
+
+
 
 .main-menu a button {
     cursor: pointer;
