@@ -12,11 +12,24 @@ body {
     line-height: 1.5;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* NAVBAR */
 
 .navbar {
     background: linear-gradient(to left, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+}
+
+.navbar a {
+    color: #FFF;
+}
+
+.navbar .logo {
+    display: flex;
+    padding-right: 50px;
 }
 
 .navbar .container {
@@ -29,16 +42,28 @@ body {
 .navbar .main-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
 .navbar .main-menu ul {
     list-style: none;
     display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .main-menu ul li {
     margin-left: 10px;
+}
+
+.main-menu a button {
+    border: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    color: hsl(353, 100%, 62%);
+    font-weight: bold;
+    font-size: 15px;
 }
 
 /* HERO SECTION */
@@ -70,11 +95,32 @@ body {
     margin-bottom: 25px;
 }
 
-.hero-buttons button {
-    border: none;
-    padding: 10px 40px;
-    border-radius: 50px;
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
+
+.hero-buttons :nth-child(1) {
+    border: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    color: hsl(353, 100%, 62%);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.hero-buttons :nth-child(2) {
+    border: 1px solid #FFF;
+    padding: 15px 35px;
+    border-radius: 50px;
+    color: #FFF;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 15px;
+}
+
 
 
 /* HERO SECOND SECTION */
@@ -150,7 +196,7 @@ body {
     gap: 50px;
     justify-content: center;
     align-items: center;
-    height: 570px;
+    height: 550px;
 }
 
 .laptop-content {
@@ -174,15 +220,6 @@ body {
 }
 
 
-/* CLASSES UTILITAIRES */
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-
 /* FOOTER SECTION */
 
 .footer {
@@ -191,9 +228,11 @@ body {
     height: 300px;
 }
 
+
 .footer .container .footer-main {
     display: flex;
     justify-content: space-between;
+    padding-top: 40px;
 }
 
 .footer-main ul li {
@@ -202,4 +241,15 @@ body {
 
 .footer-main ul li a {
     color: gray;
+    text-decoration: none;
+}
+
+
+
+/* CLASSES UTILITAIRES */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
