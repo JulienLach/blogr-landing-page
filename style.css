@@ -28,6 +28,7 @@ a {
 }
 
 .navbar .logo {
+    cursor: pointer;
     display: flex;
     padding-right: 50px;
 }
@@ -246,6 +247,7 @@ a {
 }
 
 
+
 /* FOOTER SECTION */
 
 .footer {
@@ -302,6 +304,10 @@ a {
         font-size: 35px;
     }
 
+    .editor-desktop {
+        display: none;
+    }
+
 
     /* PHONE SECTION */
 
@@ -347,6 +353,10 @@ a {
         color: hsl(207, 13%, 34%);
     }
 
+    .laptop-desktop {
+        display: none;
+    }
+
 
 
 
@@ -356,8 +366,21 @@ a {
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 15px;
+        gap: 45px;
 
     }
 
+
+}
+
+
+@media(min-width: 850px) {
+
+    .laptop-mobile {
+        display: none;
+    }
+
+    .editor-mobile {
+        display: none;
+    }
 }
