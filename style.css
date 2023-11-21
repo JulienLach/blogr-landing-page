@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: 'Ubuntu', sans-serif; */
+/* font-family: 'Overpass', sans-serif; */
+
+
+
+/* NAVBAR */
+
+.navbar {
+    background: linear-gradient(to left, hsl(356, 100%, 66%), hsl(355, 100%, 74%));
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
