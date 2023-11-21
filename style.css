@@ -419,7 +419,7 @@ a {
     .mobile-menu {
         background-color: #FFF;
         border-radius: 7px;
-        width: 80%;
+        width: 85%;
         margin: auto;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
@@ -429,7 +429,14 @@ a {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
+    }
+
+    .mobile-menu-button ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 20px;
     }
 
     .mobile-menu ul li {
@@ -437,8 +444,29 @@ a {
     }
 
     .mobile-menu ul li a {
-        color: black;
+        color: hsl(204, 28%, 19%);
         padding: 20px;
+        font-size: 17px;
+    }
+
+    .mobile-menu .mobile-menu-button button {
+        cursor: pointer;
+        border: none;
+        padding: 15px 35px;
+        border-radius: 50px;
+        color: #FFF;
+        background: linear-gradient(to left, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+        font-weight: bold;
+        font-size: 15px;
+        transition: 0.2s;
+        font-size: 16px;
+    }
+
+    .grey-line {
+        height: 1px;
+        background-color: rgb(207, 207, 207);
+        width: 85%;
+        margin: auto;
     }
 
 
