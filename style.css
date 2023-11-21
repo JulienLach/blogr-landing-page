@@ -80,7 +80,6 @@ a {
     display: block;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: start;
 }
 
@@ -93,6 +92,40 @@ a {
 }
 
 
+/* Hamburger button */
+
+.hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background: #FFF;
+    margin: 6px 0;
+}
+
+
+
+/* MOBILE MENU */
+
+.mobile-menu {
+    display: none;
+    /* Additional styling for the mobile menu */
+}
+
+.mobile-menu.active {
+    display: block;
+    /* Additional styling for the visible mobile menu */
+}
+
+
+/*  */
 
 
 .main-menu a button {
@@ -373,6 +406,39 @@ a {
 
     .main-menu ul li {
         display: none;
+    }
+
+    /* HAMBURGER MENU */
+
+    .hamburger-button {
+        display: block;
+    }
+
+    /* MOBILE MENU DROPDOWN */
+
+    .mobile-menu {
+        background-color: #FFF;
+        border-radius: 7px;
+        width: 80%;
+        margin: auto;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .mobile-menu .main-links ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .mobile-menu ul li {
+        list-style: none;
+    }
+
+    .mobile-menu ul li a {
+        color: black;
+        padding: 20px;
     }
 
 
