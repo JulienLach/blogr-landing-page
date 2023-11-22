@@ -144,6 +144,27 @@ a {
     line-height: 2.5em;
 }
 
+.mobile-menu ul li .sub-menu-mobile2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 25px 25px 25px 25px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.mobile-menu ul li .sub-menu-mobile2.active {
+    display: block;
+    position: relative;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 25px 25px 25px 25px;
+    z-index: 1;
+    border-radius: 10px;
+    line-height: 2.5em;
+}
+
 .mobile-menu ul li:hover .sub-menu-mobile {
     /* margin-top: 1em; */
     /* display: flex;
