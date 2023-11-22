@@ -6,4 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburgerButton.addEventListener('click', () =>
         mobileMenu.classList.toggle('active')
     );
+
+    const mobileSubLink = document.querySelector('.sub-menu-link');
+    const subMenuMobile = document.querySelector('.sub-menu-mobile');
+
+    mobileSubLink.addEventListener('click', () =>
+        subMenuMobile.classList.toggle('active')
+    );
+
 });
+
+
